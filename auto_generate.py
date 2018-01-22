@@ -17,7 +17,7 @@ homepath=os.path.expanduser('~')
 
 def make_vector():
 
-    text=io.open('import text', encoding='utf-8').read().lower()
+    text=io.open('input text', encoding='utf-8').read().lower()
     print('corpus length:', len(text))
     chars = sorted(list(set(text)))
     print('total chars:', len(chars))
