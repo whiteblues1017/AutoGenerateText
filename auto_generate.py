@@ -17,7 +17,7 @@ homepath=os.path.expanduser('~')
 
 def make_vector():
 
-    text=io.open('input text', encoding='utf-8').read().lower()
+    text=io.open(homepath+'/_dip/data/adjust/posting_info_baitoru_test.txt', encoding='utf-8').read().lower()
     print('corpus length:', len(text))
     chars = sorted(list(set(text)))
     print('total chars:', len(chars))
@@ -60,7 +60,7 @@ def make_vector():
         probas = np.random.multinomial(1, preds, 1)
         return np.argmax(probas)
 
-    fw = open('output text','w')
+    fw = open(homepath+'/_dip/result/test.txt','w')
     # train the model, output generated text after each iteration
     # 学習回数を決定
     for iteration in range(1, 60):
