@@ -62,6 +62,7 @@ def make_vector():
 
     fw = open('output text','w')
     # train the model, output generated text after each iteration
+    # 学習回数を決定
     for iteration in range(1, 60):
         print()
         print('-' * 50)
