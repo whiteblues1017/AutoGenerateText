@@ -6,6 +6,7 @@ import re
 homepath=os.path.expanduser('~')
 
 
+
 def clean_arenthesis(text,duplication=True):
     text=re.sub('【.+?】',"",text)
     text=re.sub('＼.+?／',"",text)
